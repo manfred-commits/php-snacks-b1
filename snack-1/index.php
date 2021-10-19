@@ -12,15 +12,16 @@ $games=[
     [
         "squadraDiCasa"=>"Squadra di casa 1",
         "squadraOspite"=>"Squadra ospite 1",
-        "puntiSquadraDiCasa"=>55,
-        "puntiSquadraOspite"=>60,
+        "puntiSquadraDiCasa"=>43,
+        "puntiSquadraOspite"=>50,
     ],
     [
         "squadraDiCasa"=>"Squadra di casa 1",
         "squadraOspite"=>"Squadra ospite 1",
-        "puntiSquadraDiCasa"=>55,
-        "puntiSquadraOspite"=>60,
+        "puntiSquadraDiCasa"=>25,
+        "puntiSquadraOspite"=>63,
     ],
 ];
-
-var_dump($games[0]["squadraDiCasa"]);
+for($i=0;$i<count($games);$i++){
+    echo "{$games[$i]["squadraDiCasa"]} - {$games[$i]["squadraOspite"]} | {$games[$i]["puntiSquadraDiCasa"]} - {$games[$i]["puntiSquadraOspite"]}<br>";
+};
