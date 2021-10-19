@@ -19,6 +19,10 @@ input{
     width: 230px;
     height: 40px;
     padding: 5px;
+    font-weight: bold;
+    font-size: 14px; 
+    border: 1px solid black;
+    border-radius: 10px;
 }
 /* /general-rules */
 
@@ -35,7 +39,11 @@ input{
     border-radius: 0 0 35px 35px;
     text-align: center;
 }
-.main-container #input-btn-container{
+.main-container form{
+    width: 100%;
+}
+.main-container form #input-btn-container{
+    padding: 20px 0 0;
     width: 100%;
 }
 .main-container .general-message{

@@ -44,7 +44,7 @@ if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter))
             <input type="text" name="name" placeholder="Inserisci Nome Utente">
             <input type="text" name="mail" placeholder="Inserisci Email">
             <input type="text" name="age" placeholder="Inserisci Età">
-            <div id="id="input-btn>
+            <div id="input-btn-container"input-btn>
                 <input type="submit">
             </div>
         </form>
