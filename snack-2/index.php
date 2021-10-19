@@ -6,6 +6,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 $name_parameter=$_GET['name'];
 $mail_parameter=$_GET['mail'];
 $age_parameter=$_GET['age'];
+$verified=false;
 
 if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter)){
     // basic debug static
@@ -14,13 +15,9 @@ if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter))
     // $age_parameter=25;
     
     if(strlen($name_parameter)>3 && (strpos($mail_parameter,".")||strpos($mail_parameter,".") == 0) && strpos($mail_parameter,"@") && is_numeric($age_parameter)){
-        echo "Accesso riuscito";
-    }else{
-        echo "Accesso negato";
+        $verified=true;
     }
 
-}else{
-    echo "Inserisci Nome, Email e età";
 }
 ?>
 
@@ -39,5 +36,19 @@ if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter))
         <input type="text" name="age">
         <input type="submit">
     </form>
+    
+    <?php if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter)){?>
+        
+        <?php if($verified){?>
+        <h2>Acesso riuscito</h2>
+        <?php }else{?>
+        <h2>Acesso Negato</h2>
+        <?php }?>
+
+    <?php }else{?>
+        <h2>Compila i campi per effettuare l'accesso</h2>
+    <?php }?>
+
+
 </body>
 </html>
