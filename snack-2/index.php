@@ -34,7 +34,7 @@ if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter))
         <!-- /link to font family -->
     <!-- link to ccss -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- /link to ccss -->
+    <!-- /link to css -->
     <title>Snack-2</title>
 </head>
 <body>
