@@ -13,7 +13,7 @@ if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter))
     // $mail_parameter='manfredipiraino@gmail.com';
     // $age_parameter=25;
     
-    if(strlen($name_parameter)>3 && strpos($mail_parameter,".") && strpos($mail_parameter,"@") && is_numeric($age_parameter)){
+    if(strlen($name_parameter)>3 && (strpos($mail_parameter,".")||strpos($mail_parameter,".") == 0) && strpos($mail_parameter,"@") && is_numeric($age_parameter)){
         echo "Accesso riuscito";
     }else{
         echo "Accesso negato";
