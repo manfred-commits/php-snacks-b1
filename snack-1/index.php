@@ -22,6 +22,9 @@ $games=[
         "puntiSquadraOspite"=>63,
     ],
 ];
+// xdebug installation test
+var_dump($games);
+
 for($i=0;$i<count($games);$i++){
     echo "{$games[$i]["squadraDiCasa"]} - {$games[$i]["squadraOspite"]} | {$games[$i]["puntiSquadraDiCasa"]} - {$games[$i]["puntiSquadraOspite"]}<br>";
 };

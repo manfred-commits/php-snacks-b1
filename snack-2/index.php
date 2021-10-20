@@ -9,7 +9,7 @@ $age_parameter=$_GET['age'];
 $verified=false;
 
 if(!empty($name_parameter) && !empty($mail_parameter) && !empty($age_parameter)){
-    // basic debug static
+    // basic debug (static)
     // $name_parameter='manfredi';
     // $mail_parameter='manfredipiraino@gmail.com';
     // $age_parameter=25;
