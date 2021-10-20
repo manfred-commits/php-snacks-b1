@@ -53,7 +53,7 @@ $posts = [
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
         <!-- /link to font family -->
     <!-- link to ccss -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style3.css">
     <!-- /link to css -->
     <title>Snack-3</title>
 </head>
@@ -63,10 +63,12 @@ $posts = [
         
         <?php foreach($posts as $postDate => $postValue){?>
             
-            <h2><?php echo $postDate;?></h2>
+            <h2>
+                <?php echo $postDate;?>
+            </h2>
             <ul>
             <?php foreach($postValue as $value){?>
-                
+        
                 <li>
                 <?php foreach($value as $title=>$content){?>
                     <?php echo "{$title} : {$content} <br>";?> 
