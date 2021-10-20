@@ -1,0 +1,45 @@
+/* general-rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 3px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+/* /general-rules */
+
+/* main container section */
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: white;
+    box-shadow: 1px 2px 15px black;
+    border-radius: 0 0 35px 35px;
+    text-align: center;
+    padding: 10px;
+}
+.main-container ul{
+    width: 80%;
+    list-style: none;
+}
+.grey-cont{
+    background-color: grey;
+}
+.green-cont{
+    background-color: green;
+}
+
+/* /main container section */
