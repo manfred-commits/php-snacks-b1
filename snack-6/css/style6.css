@@ -44,6 +44,8 @@ body{
     flex-wrap: wrap;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 1px 2px 8px black;
+
 }
 .grey-cont{
     background-color: grey;
