@@ -24,19 +24,30 @@ body{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 50%;
     background-color: white;
     box-shadow: 1px 2px 15px black;
     border-radius: 0 0 35px 35px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 .main-container ul{
     width: 80%;
     list-style: none;
 }
+.grey-cont,
+.green-cont{
+    margin: 5px;
+    width: calc(50% -10px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 10px;
+}
 .grey-cont{
     background-color: grey;
+    
 }
 .green-cont{
     background-color: green;
