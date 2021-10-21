@@ -15,5 +15,4 @@ $studenti=[
         "cognome"=>"Madrigali",
         "voti"=>[rand(2,10),rand(2,10),rand(2,10),rand(2,10),rand(2,10)],
     ],
-]
-?>
+];

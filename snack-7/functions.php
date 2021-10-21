@@ -21,5 +21,3 @@ function getAverage($array){
 }
 
 // /FUNZIONI
-
-?>
