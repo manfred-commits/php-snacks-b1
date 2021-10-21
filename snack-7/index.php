@@ -19,7 +19,7 @@ function getAverage($array){
         
         $average=$average / $length;
     
-    return round($average);
+    return round($average,2);
 }
 
 // /FUNZIONI
