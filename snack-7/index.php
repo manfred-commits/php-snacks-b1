@@ -1,48 +1,8 @@
 <?php
     // Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno.
 
-// FUNZIONI
-
-function getAverage($array){
-    $average=0;
-    $length=0;
-
-    
-
-        $length=count($array);
-
-        foreach($array as $numbers){
-
-            $average+=$numbers;
-        }
-
-        
-        $average=$average / $length;
-    
-    return round($average,2);
-}
-
-// /FUNZIONI
-
-
-$studenti=[
-    [        
-        "nome"=>"Samuele",
-        "cognome"=>"Madrigali",
-        "voti"=>[10,10,10,10,10],
-    ],
-    [        
-        "nome"=>"Alessandra",
-        "cognome"=>"Madrigali",
-        "voti"=>[rand(2,10),rand(2,10),rand(2,10),rand(2,10),rand(2,10)],
-    ],
-    [        
-        "nome"=>"Nemo",
-        "cognome"=>"Madrigali",
-        "voti"=>[rand(2,10),rand(2,10),rand(2,10),rand(2,10),rand(2,10)],
-    ],
-]
-
+    require __DIR__ . "/data.php";
+    require __DIR__ . "/functions.php";
 
 
 ?>
