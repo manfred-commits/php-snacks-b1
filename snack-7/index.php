@@ -9,9 +9,9 @@ function getAverage($array){
 
     
 
-        $length=count($array['voti']);
+        $length=count($array);
 
-        foreach($array['voti'] as $numbers){
+        foreach($array as $numbers){
 
             $average+=$numbers;
         }
@@ -72,7 +72,7 @@ $studenti=[
         </h2>
         <h3>
 
-            <?php echo "Media voti studente:". getAverage($studente);?>
+            <?php echo "Media voti studente:". getAverage($studente['voti']);?>
 
         </h3>
 
