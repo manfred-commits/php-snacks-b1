@@ -19,7 +19,7 @@ function getAverage($array){
         
         $average=$average / $length;
     
-    return $average;
+    return round($average);
 }
 
 // /FUNZIONI
@@ -32,14 +32,14 @@ $studenti=[
         "voti"=>[10,10,10,10,10],
     ],
     [        
-        "nome"=>"Samuele",
+        "nome"=>"Alessandra",
         "cognome"=>"Madrigali",
-        "voti"=>[1,2,3,4,5],
+        "voti"=>[rand(2,10),rand(2,10),rand(2,10),rand(2,10),rand(2,10)],
     ],
     [        
-        "nome"=>"Samuele",
+        "nome"=>"Nemo",
         "cognome"=>"Madrigali",
-        "voti"=>[1,2,3,4,5],
+        "voti"=>[rand(2,10),rand(2,10),rand(2,10),rand(2,10),rand(2,10)],
     ],
 ]
 
@@ -72,7 +72,7 @@ $studenti=[
         </h2>
         <h3>
 
-            <?php echo getAverage($studente);?>
+            <?php echo "Media voti studente:". getAverage($studente);?>
 
         </h3>
 

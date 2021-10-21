@@ -31,5 +31,7 @@ body{
     text-align: center;
     padding: 10px;
 }
-
+.main-container h3{
+    width: 100%;
+}
 /* /main container section */
